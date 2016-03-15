@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+fieldset{
+	background-color:lightyellow;
+	border:10px solid yellow;
+	margin-bottom:10px;
+	width:720px;
+}
+label{
+	width:180px;
+	display:inline-block;
+	text-align:right;
+	text-align: top;
+}
+ textarea{
+ 	width:360px;
+ 	height:50px;
+ }
+#change{
+	width:auto;
+}
+#rangecenter{
+	text-align:center;
+}
+label:hover { font-size:25px }
+input:hover { font-size:20px; }
+</style>
+<title>Dating Site</title>
+</head>
+<body>
+<h3>Please Enter Your Details For Our Dating Website!</h3>
+<fieldset>
+   <legend>Your Face</legend>
+   <label for="avatar">Your image:</label>
+   <input type="file" name="avatar" required>
+   <br>
+   <label for="imgpreview">Image preview:</label>
+   <img src="" name="imgpreview" id="preview">
+</fieldset>
+<fieldset>
+	<legend>Your General Details</legend>
+	<label for="name">Name:</label>
+	<input type="text" name="name" placeholder="Your full name" required>
+	<br>
+	<label  for="gender">Gender:</label>
+	<input type="radio" name="gender" id ="change" value="male" required>Male
+	<input type="radio" name="gender" id ="change" value="female" required>Female
+	<br>
+	<label for="age">Age:</label>
+	<input type="number" name="age" min="18" max="90" value="18" required>
+	<br>
+	<label for="bday">Date of birth:</label>
+	<input type="date" name="bday" min="2000-01-02">
+	<br>
+	<label for="favcolor">Favorite color:</label>
+	<input type="color" name="favcolor">
+	<br>
+	<label  for="con">Which country:</label>
+	<select>
+	  <option name="con" value=""></option>
+	  <option name="con" value="America">America</option>
+	  <option name="con" value="Canada">Canada</option>
+	  <option name="con" value="India">India</option>
+	  <option name="con" value="India">Argentina</option>
+	  <option name="con" value="India">China</option>
+	  </select>
+</fieldset>   
+<fieldset>
+	<legend>Your Indicators</legend>
+
+	<label for="Height">Height:</label>
+	 <label id="rangecenter">Short</label><input type="range" name="Height" min="0" max="10"> <label id="rangecenter">Tall</label>
+	<br>
+	<label for="Height">Salary:</label>
+    <label id="rangecenter">Poor</label><input type="range" name="Salary" min="0" max="10"> <label id="rangecenter">Rich</label>
+</fieldset>
+<fieldset>
+	<legend>Your Contact Information</legend>
+	<label for="email">Email:</label>
+	<input type:"email" name="email" required>
+	<br>
+	<label for="phone">Mobile:</label>
+	<input type="tel" name="phone">
+	<br>
+	<label for="address">Address:</label>
+	<textarea name="address"></textarea>
+	<br>
+	<label  for="md">Method to contact you:</label>
+	<input type="checkbox" name="md" id ="change">Email
+	<input type="checkbox" name="md" id ="change">Whatsapp
+	<input type="checkbox" name="md" id ="change">In-app chat
+</fieldset>
+<input type="submit" value="Submit">
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
